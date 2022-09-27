@@ -115,7 +115,11 @@
     </style>
   </head>
   <body>
-    <iframe document.addEventListener('touchstart', {}); id="contentFrame" frameBorder="0" allowfullscreen></iframe>
+    <script>
+    function onTouch( e ){};
+document.addEventListener( 'touchstart', onTouch, false );
+    </script>
+    <iframe id="contentFrame" frameBorder="0" allowfullscreen></iframe>
     <div id="dialogWrap">
         <div id="dialogWrapCell">
             <div id="mainDialog">
