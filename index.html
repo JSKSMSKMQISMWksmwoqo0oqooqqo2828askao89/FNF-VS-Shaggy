@@ -279,8 +279,11 @@
             }
         }
         
-      document.querySelector('div').addEventListener('click', ()=>{
-  document.querySelector('div').focus();
+      window.addEventListener('load', function () {
+    window.focus();
+    document.body.addEventListener('click',function(e) {
+        window.focus();
+    },false);
 });
       
         submitPass.onclick = doSubmit;
