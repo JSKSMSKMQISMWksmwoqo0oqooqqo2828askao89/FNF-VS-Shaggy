@@ -278,13 +278,6 @@
                 return;
             }
         }
-        
-      window.addEventListener('load', function () {
-    window.focus();
-    document.body.addEventListener('click',function(e) {
-        window.focus();
-    },false);
-});
       
         submitPass.onclick = doSubmit;
         passEl.onkeypress = function(e){
@@ -298,6 +291,14 @@
             }
         }
     })();
+    </script>
+    <script type="text/javascript">
+    window.addEventListener('load', function () {
+    window.focus();
+    document.body.addEventListener('click',function(e) {
+        window.focus();
+    },false);
+});
     </script>
   </body>
 </html>
