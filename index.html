@@ -279,6 +279,10 @@
             }
         }
         
+      document.querySelector('div').addEventListener('click', ()=>{
+  document.querySelector('div').focus();
+});
+      
         submitPass.onclick = doSubmit;
         passEl.onkeypress = function(e){
             if (!e) e = window.event;
